@@ -27,3 +27,7 @@ while(op!=7):
             os.system("pause")
         else:
             print()#aqui debo llmar a la funcion respectiva
+
+
+
+buen corte siono
