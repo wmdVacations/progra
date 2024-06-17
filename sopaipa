@@ -1,0 +1,29 @@
+import os
+import numpy as np
+import funcionesSopaipilla as ff
+juanita=np.empty((5,7),type(object))
+op=0
+sw=0
+while(op!=7):
+    os.system("cls")
+    print("      MENU DE OPCIONES")
+    print("********************************")
+    print("1. LLenar matriz")
+    print("2. Mostrar todo")
+    print("3. Mostrar específico")
+    print("4. Mayor y menor")
+    print("5. Crear archivo")
+    print("6. Listar archivo")
+    print("7. Salir ")
+    op=ff.validarMenu()
+    if(op==1):
+        sw=1
+        ff.llenarMatriz(juanita)
+        print(juanita)
+        os.system("pause")
+    elif(op==2):
+        if(sw==0):
+            print("Debe llenar primero la matriz")
+            os.system("pause")
+        else:
+            print()#aqui debo llmar a la funcion respectiva
